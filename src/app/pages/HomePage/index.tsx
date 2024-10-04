@@ -27,6 +27,10 @@ const TodoList = styled.div``;
 
 const TodoItem = styled.div`
   display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2em;
+  border-bottom: 1px;
 `;
 
 export function HomePage() {
@@ -40,7 +44,9 @@ export function HomePage() {
       <Wrapper>
         <Box>
           <Title>할 일</Title>
-          <TodoList></TodoList>
+          <TodoList>
+            <TodoItem>가나</TodoItem>
+          </TodoList>
         </Box>
       </Wrapper>
     </>
