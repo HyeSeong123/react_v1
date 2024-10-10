@@ -6,7 +6,6 @@ const Box = styled.div`
   align-items: center;
   padding: 15px 25px;
   width: 100% auto;
-  font-size: 1.1em;
   border-bottom: 1px solid #eee;
 `;
 
