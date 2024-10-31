@@ -15,11 +15,20 @@ const Input = styled.input`
   outline: 0;
 `;
 
-export default function TodoInput() {
+export default function TodoInput({
+  setTodoList,
+}: {
+  setTodoList: (todo: ITodoItemContent) => void;
+}) {
+  const [content, setContent] = React.useState<string>('');
   return (
     <>
       <Box>
-        <Input placeholder="할일을 입력해주세요" />
+        <Input
+          placeholder="할일을 입력해주세요"
+          value={content}
+          onChange={e => setContent(e.target.value)}
+        />
       </Box>
     </>
   );
